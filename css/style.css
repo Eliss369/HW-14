@@ -36,32 +36,81 @@ body {
 .list-link-item:nth-child(2n) {
   color: var(--blue-color);
 }
-/* flex */
-.flex-container {
+
+/* header-flex */
+
+.header-flex {
   display: flex;
-  width: 1600px;
-  align-items: center;
 }
-.header-contacts-item,
-.header-nav-item {
-  margin-right: 50px;
+.header {
+  height: 80px;
 }
 .header-logo {
   margin-right: 91px;
-  font-weight: 700;
   font-family: Raleway;
+  font-size: 26px;
   line-height: 30.52px;
 }
+.header-nav-item:not(:last-child),
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-nav-list {
   margin-right: 344px;
 }
-.advatages-title,
-.photos-title,
+
+/* advatages-flex */
+.advatages-flex {
+  display: flex;
+}
+.advatages-title {
+  display: flex;
+  justify-content: center;
+  line-height: 16.41px;
+}
+
+/* team-flex */
 .team-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+.team-flex {
+  display: flex;
+  justify-content: center;
+}
+.team-flex:not(:last-child) {
+  margin-right: 30px;
+}
+/* photos-flex */
+.photos-flex {
+  display: flex;
+  justify-content: center;
+}
+.photos-title {
   display: flex;
   justify-content: center;
 }
 
+/* portfolio-flex */
+.portfolio-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 56px;
+}
+.portfolio-list-item:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-button {
+  width: 73px;
+  height: 38px;
+}
 /* hero  */
 .hero {
   background-color: var(--dark-blue-color);
@@ -77,13 +126,21 @@ body {
   color: var(--white-color);
   font-size: 16px;
   line-height: calc(30 / 16);
+  margin-right: 100px;
+  margin-top: 140px;
 }
 .hero-title {
+  padding-top: 175px;
+  margin-left: 200px;
   line-height: 60px;
   color: var(--white-color);
+  height: 120px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
 }
 /* team */
-.team-list-item {
+.team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 /* photos */
@@ -104,7 +161,7 @@ body {
   line-height: 18.75px;
   font-weight: 400;
 }
-.photos-list-item {
+.photos-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -114,7 +171,7 @@ body {
   font-weight: 400;
   line-height: inherit;
 }
-.advatages-list-item {
+.advatages-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
